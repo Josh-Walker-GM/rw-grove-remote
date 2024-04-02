@@ -11,10 +11,10 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
 
   return (
     <>
-      <header className="relative flex items-center justify-between bg-purple-700 px-8 py-4 text-white">
+      <header className="relative flex items-center justify-between bg-blue-700 px-8 py-4 text-white">
         <h1 className="text-3xl font-semibold tracking-tight">
           <Link
-            className="text-purple-400 transition duration-100 hover:text-purple-100"
+            className="text-blue-400 transition duration-100 hover:text-blue-100"
             to={routes.home()}
           >
             Redwood Blog
@@ -24,8 +24,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
           <ul className="relative flex items-center font-light">
             <li>
               <NavLink
-                className="rounded px-4 py-2 transition duration-100 hover:bg-purple-600"
-                activeClassName="py-2 px-4 hover:bg-purple-600 transition duration-100 rounded underline underline-offset-4"
+                className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
+                activeClassName="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded underline underline-offset-4"
                 to={routes.about()}
               >
                 About
@@ -33,8 +33,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             </li>
             <li>
               <NavLink
-                className="rounded px-4 py-2 transition duration-100 hover:bg-purple-600"
-                activeClassName="py-2 px-4 hover:bg-purple-600 transition duration-100 rounded underline underline-offset-4"
+                className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
+                activeClassName="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded underline underline-offset-4"
                 to={routes.contactUs()}
               >
                 Contact Us
@@ -42,8 +42,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             </li>
             <li>
               <NavLink
-                className="rounded px-4 py-2 transition duration-100 hover:bg-purple-600"
-                activeClassName="py-2 px-4 hover:bg-purple-600 transition duration-100 rounded underline underline-offset-4"
+                className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
+                activeClassName="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded underline underline-offset-4"
                 to={routes.posts()}
               >
                 Admin
@@ -52,8 +52,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             {isAuthenticated && (
               <li>
                 <NavLink
-                  className="rounded px-4 py-2 transition duration-100 hover:bg-purple-600"
-                  activeClassName="py-2 px-4 hover:bg-purple-600 transition duration-100 rounded underline underline-offset-4"
+                  className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
+                  activeClassName="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded underline underline-offset-4"
                   onClick={logOut}
                   to={''}
                 >
@@ -64,8 +64,8 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             {!isAuthenticated && (
               <li>
                 <NavLink
-                  className="rounded px-4 py-2 transition duration-100 hover:bg-purple-600"
-                  activeClassName="py-2 px-4 hover:bg-purple-600 transition duration-100 rounded underline underline-offset-4"
+                  className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
+                  activeClassName="py-2 px-4 hover:bg-blue-600 transition duration-100 rounded underline underline-offset-4"
                   to={routes.login()}
                 >
                   Log In
